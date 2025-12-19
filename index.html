@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Social links profile</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    :root{
+      --color-green: hsl(75, 94%, 57%);
+      --color-white: hsl(0, 0%, 100%);
+      --color-grey700: hsl(0, 0%, 20%);
+      --color-grey800: hsl(0, 0%, 12%);
+      --color-grey900: hsl(0, 0%, 8%);
+      --font-bd: 12px;
+      --font-family: "Inter", sans-serif;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    main{
+      width: 100vw;
+      min-height: 100vh;
+      background-color: var(--color-grey900);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card{
+      width: 280px;
+      height: auto;
+      padding: 30px 25px;
+      margin: 0 20px;
+      text-align: center;
+      border-radius: 20px;
+      background-color: var(--color-grey800);
+      color: var(--color-white);
+      font-family: var(--font-family);
+    }
+    .userInfo img{
+      width: 50px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .userInfo p{
+      font-size: var(--font-bd);
+    }
+    .address{
+      color: var(--color-green);
+      margin-bottom: 15px;
+      line-height: 2;
+    }
+    .userInfo p:nth-of-type(2){
+      font-size: 10px;
+    }
+    .profile{
+      font-size: 8px;
+    }
+    .btns{
+      margin-top: 15px;
+    }
+    .btns button{
+      width: 100%;
+      background-color: var(--color-grey700);
+      text-align: center;
+      border: none;
+      padding: 13px;
+      margin: 5px 0px;
+      color: var(--color-white);
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .btns button:hover{
+      cursor: pointer;
+      background-color: var(--color-green);
+      color: var(--color-grey900);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="card">
+        <div class="userInfo">
+          <img src="assets/images/avatar-jessica.jpeg" alt="User profile image">
+          <h4>Jessica Randall</h4>
+          <p class="address">London, United Kingdom</p>
+          <p>"Front-end developer and avid reader."</p>
+        </div>
+        <div class="btns">
+          <button>GitHub</button>
+          <button>Frontend Mentor</button>
+          <button>LinkedIn</button>
+          <button>Twitter</button>
+          <button>Instagram</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+</body>
+</html>
